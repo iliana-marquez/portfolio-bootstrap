@@ -38,7 +38,35 @@ h1, h2 {
 #portfolio {
     background-color: #dbdcde;
 }
+
+/* to target only these classes within the portf. section, otherwise all bootstrap classes will be overwritten */
+#portfolio .card-title {
+    color: #1f7798;
+
+}
+
+/* target always the most specific class */
+#portfolio .btn-outline-secondary:hover {
+    color: white;
+    background-color: #1f7798;
+}
+
+/* also can target min height to avoid changes in card heights */
+#portfolio .card-text {
+    min-height: 120px;
+}
+
 /* Contact section */
 #contact {
     background-color: white;
+}
+
+/* Media queries */
+
+/* Use Bootstrap breakpoint for XL screens */
+@media screen and (min-width: 1200px) {
+    /* Fixes all portfolio cards being too tall on xl screens */
+    #portfolio .card-text {
+        min-height: auto;
+    }    
 }
