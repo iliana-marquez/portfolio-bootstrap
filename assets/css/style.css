@@ -26,6 +26,18 @@ h1, h2 {
     border-radius: 0;
 }
 
+.custom-btn {
+    color: white;
+    background-color:  #1f7798;;
+    border: solid 1px  #1f7798;;
+}
+
+.custom-btn:hover {
+    color: white;
+    background-color: #1d6d8a;
+    border: solid 1px #1d6d8a;
+}
+
 /* Hero section */
 #hero {
     background-color: #dbdcde;
